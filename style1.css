@@ -27,78 +27,173 @@ body {
   aspect-ratio: 9/16;
   overflow: hidden;
 }
+.text-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95vw;
+    max-width: 525px;
+    aspect-ratio: 9/16;
+    z-index: 100; pointer-events: none; 
+}
 .text1 {
-    z-index: 999;
-    position:relative;
-    color: #000000; /* 白色 */
-    transform: rotate(90deg);
-    top:730px;
-    left:-120px;
-    font-size: 220px;
-    overflow: hidden;
+    top:250px;left:70px;position:absolute;color: #000000; /* 白色 */font-size: 200px;scale:0.7;overflow: hidden;
 }
 .text2 {
-    text-align: left;
-    z-index: 999;
-    position:relative;
-    color: #000000; /* 白色 */
-    top: +300px;
-    left: 635px;
-    font-size: 90px;
+    text-align: left;position:absolute;color: #000000; /* 白色 */top:330px;left:105px;font-size: 70px;
 }
 .text3 {
-    text-align: left;
-    z-index: 999;
-    top: +300px;
-    position:relative;
-    left: 640px;
-    color: #000000; /* 白色 */
-    font-size: 35px;
+    text-align: left;position:absolute;color: #000000; /* 白色 */top:330px;left:270px;font-size: 70px;
+}
+.text4 {
+    text-align: left;position:absolute;top:500px;left:90px;color: #000000; /* 白色 */font-size: 60px;
+}
+.prompt {
+    writing-mode: vertical-rl; /* 核心：竖排 */
+    position: absolute;bottom: 20px;left: 100%;transform: translateX(-50%);
+    color: #ffffff; /* 白色 */font-size: 24px;opacity: 0.8;
+}
+.text1a {
+    z-index: 999;top: 200px;position:relative;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text2a {
+    z-index: 999;top: 200px;position:relative;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 50px;opacity: 0;
+}
+.text3a {
+    z-index: 999;top: 200px;position:relative;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 40px;opacity: 0;
+}
+.text1b {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1c {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1d {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1e {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1f {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1g {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1h {
+    z-index: 999;top: 20%;position:absolute;left: 8%;
+    color: #ffffff; /* 白色 */font-size: 60px;opacity: 0;
+}
+.text1i {
+    z-index: 999;top: 20%;position:absolute;left: 3%;
+    color: #ffffff; /* 白色 */font-size: 50px;opacity: 0;
+}
+.text2i {
+    z-index: 999;top: 20%;position:absolute;left: 3%;
+    color: #ffffff; /* 白色 */font-size: 50px;opacity: 0;
+}
+.textj {
+    z-index: 999;top: 20%;position:absolute;left: 3%;
+    color: #000000; font-size: 50px;opacity: 0;
 }
 .mask1 {
-    top: 20.45%;
-    left: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 95vw;
-    max-width: 525px;
-    background-color: #ffffff;
-    z-index: 90;
-    overflow: hidden;
+    top: 20.45%;left: 50%;position: fixed;transform: translate(-50%, -50%);height: 500px;width: 95vw;max-width: 525px;background-color: #ffffff;z-index: 90;overflow: hidden;
 }
 .mask2 {
-    top: 75.515%;
-    left: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    width: 95vw;
-    max-width: 525px;
-    height: 500px;
-    background-color: #ffffff;
-    z-index: 90;
-    overflow: hidden;
+    top: 75.515%;left: 50%;position: fixed;transform: translate(-50%, -50%);width: 95vw;max-width: 525px;height: 500px;background-color: #ffffff;z-index: 90;overflow: hidden;
 }
 .line {
-    top: 47.2%;
-    left: 34.42%;
-    position: fixed;
-    width: 95vw;
-    height: 16px;
-    transform-origin: right center;
-    max-width: 525px;
-    background-color: #ffffff;
-    z-index: 90;
-    overflow: hidden;
+    top: 47.2%;left: 34.42%;position: fixed;width: 95vw;height: 16px;transform-origin: right center;max-width: 525px;background-color: #ffffff;z-index: 90;overflow: hidden;
 }
 .video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
+  position: absolute;width: 100%;height: 100%;object-fit: cover;pointer-events: none;
 }
 #v2 {
   opacity: 0;
   transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v3 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v3l {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v4 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v5 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v6 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v7 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v8 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v9 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+#v10 {
+  opacity: 0;
+  transition: opacity 0.25s ease-out; /* 更流畅的过渡 */
+}
+
+.icon {
+  position: absolute;top: 18px;left: 12px;width: 40px;height: 40px;border-radius: 50%; opacity: 0;scale: 0.107;
+}
+.box {
+  width: 500px;
+  height: 110px;
+  border-radius: 16px;
+  background-color: rgba(177, 218, 245, 0.409); 
+  z-index: 200;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  /* 新增：固定定位（避免随滚动移动） */
+  position: fixed;
+  top: 100%;
+  left: 35%;
+  transform: translate(-50%, -50%) scale(0.8); /* 初始缩放+居中 */
+  transition: all 0.3s ease; /* 兜底过渡 */
+}
+.box-text {
+  color: #fff;        /* 文字颜色 */
+  font-size: 22px;    /* 文字大小 */
+  text-align: center; /* 居中 */
+  margin-bottom: 38px; /* 离按钮的距离 */
+  position: absolute;
+  top: 38px;          /* 文字距离顶部位置 */left: 0;right: 0;
+}
+.btn-img {
+  width: 70px; /* 按钮大小自己调 */
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: absolute;
+  bottom: 19px;   /* 距离底部多少 */
+  right: 12px;    /* 距离右边多少 */
+}
+  /* 点击缩小效果 */
+.btn-img:active {
+  transform: scale(0.82);
 }
