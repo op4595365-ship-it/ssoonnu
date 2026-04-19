@@ -291,12 +291,6 @@ function animateStep8() {
     y:125,
     ease:"power3.out",
 })
-    gsap.to(".textj",{
-    opacity:1,
-    duration: 0.6,
-    y:-125,
-    ease:"power3.out",
-})
 }
 //按钮点击
 
